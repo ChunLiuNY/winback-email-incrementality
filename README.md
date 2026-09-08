@@ -50,7 +50,7 @@ against each other.
 
 ### The finding that should change what the team does
 
-Splitting by lapse depth, using the PSM + DiD specification:
+Splitting by lapse depth, using the headline specification:
 
 | Segment (based on recency) | Targeted | Incremental Lift | 95% CI | p |
 |---|---|---|---|---|
