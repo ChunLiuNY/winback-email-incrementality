@@ -2,7 +2,7 @@
 
 ## Business Question
 
-An e-commerce company runs a win-back campaign: customers who haven't
+An e-commerce company runs a win-back marketing campaign: customers who haven't
 purchased in 60+ days receive a re-engagement email. Targeting is not random —
 a CRM rule selects recipients based on their recency, frequency, and monetary
 (RFM) history.
