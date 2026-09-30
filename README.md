@@ -81,10 +81,10 @@ it passed over. DiD gets around the level problem by comparing each group's
 change instead of its level, differencing away any confounder that stays fixed
 across the window.
 
-That buys a different assumption in exchange: **parallel trends** — absent the
+That buys an assumption in exchange: **parallel trends** — absent the
 campaign, treated and control would have moved together.
 
-**Parallel trends failed, and that failure determined the rest of the design.**
+**However, parallel trends failed, and that failure determined the rest of the design.**
 A placebo test on the pre-period returned a significant "effect" (−1.22pp,
 p = 0.0008), and an event study with a joint F-test across all 11 pre-period
 leads rejected parallel trends at p = 0.0002.
@@ -101,7 +101,7 @@ makes that credible.
 
 Matching is what buys back the assumption that failed. If the trend break comes
 from treated and control sitting at different RFM levels, then restricting the
-comparison to customers at *comparable* RFM levels should remove it — and unlike
+comparison to customers at comparable RFM levels should remove it — and unlike
 the original assumption, that is a claim the data can check.
 
 Concretely: fit a logistic propensity model on RFM, match each treated customer
@@ -207,8 +207,12 @@ reflect that gap.
 
 ### What the campaign actually delivered
 
-Across 24,516 emails, roughly **710 incremental conversions** — essentially all
-of them from the moderate-lapse segment. Deep-lapse contributed nothing
+Across 24,516 emails, roughly **710 incremental conversions**, worth about
+**$62,000 in incremental revenue** over the quarter. Essentially all of them came
+from the moderate-lapse segment. The dollar figure prices each incremental
+conversion at ~$88, the regression-adjusted revenue effect per incremental
+conversion in that segment. That is revenue, not margin, and it counts repeat
+purchases within the quarter. Deep-lapse contributed nothing
 measurable: its point estimate is negative but indistinguishable from zero, so it
 is treated as zero here instead of subtracted. At zero cost, the campaign is
 unambiguously worth running. **Keep it.**
@@ -226,7 +230,11 @@ so the decision stays measurable.**
 
 **Send to the 16,719 moderately-lapsed customers the CRM rule skipped — worth
 roughly 690 additional incremental conversions at the measured 4.14pp effect,
-close to doubling what the campaign has produced, at zero incremental cost.**
+or about $51,000 in incremental revenue per quarter, at zero incremental cost.**
+That would add roughly 80% to the campaign's current ~$62,000. The dollar figure
+prices each conversion at ~$74, what these customers actually spend in a quarter
+when they buy. That is below the ~$88 used above, because the CRM rule passed
+them over partly for lower historical spend.
 Every one of them falls inside the propensity-score range of customers already
 targeted, so this is interpolation from what was measured, not a bet on an
 unfamiliar audience.
