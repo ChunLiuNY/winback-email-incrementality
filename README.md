@@ -78,7 +78,7 @@ effect with who was selected to receive it.
 The **treated** group is the 24,516 lapsed customers the CRM rule picked to
 receive the win-back email. The **control** group is the 20,484 lapsed customers
 it passed over. DiD gets around the level problem by comparing each group's
-*change* instead of its level, differencing away any confounder that stays fixed
+change instead of its level, differencing away any confounder that stays fixed
 across the window.
 
 That buys a different assumption in exchange: **parallel trends** — absent the
