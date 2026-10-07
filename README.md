@@ -1,6 +1,6 @@
 # Win-Back Email Incrementality: A Difference-in-Differences Case Study
 
-## Business Question
+## Business Framing
 
 An e-commerce company runs a win-back marketing campaign: customers who haven't
 purchased in 60+ days receive a re-engagement email. Targeting is not random —
